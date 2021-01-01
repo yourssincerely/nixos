@@ -20,6 +20,7 @@
     neovim
     pipewire
     wireplumber
+    fuzzel
     alsa-utils
     wl-clipboard
     wlogout
