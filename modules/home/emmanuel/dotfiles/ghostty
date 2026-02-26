@@ -1,0 +1,4 @@
+font-size = 10
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+l=goto_split:right
+theme = Catppuccin Mocha
