@@ -13,6 +13,27 @@
 
   console.keyMap = "es";
 
+  environment.systemPackages = with pkgs; [
+    google-chrome
+    ffmpeg
+    ghostty
+    neovim
+    fuzzel
+    pipewire
+    wireplumber
+    alsa-utils
+    waybar
+    wl-clipboard
+    wlogout
+    brightnessctl
+    blueman
+    mako
+    nautilus
+    tree
+    oh-my-zsh
+    nerd-fonts.jetbrains-mono
+  ];
+
   hardware.bluetooth.enable = true;
 
   home-manager = {
@@ -41,9 +62,25 @@
     networkmanager.enable = true;
   };
 
+  programs = {
+    niri = {
+      enable = true;
+      useNautilus = true;
+    };
+  };
+
   services = {
-    upower.enable = true;
+    blueman.enable = true;
+    displayManager.ly.enable = true;
+    dbus.enable = true;
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      alsa.support32Bit = true;
+      pulse.enable = true;
+    };
     power-profiles-daemon.enable = true;
+    upower.enable = true;
   };
 
   users = {

@@ -4,7 +4,7 @@
   services = {
 
     greetd = {
-      enable = true;
+      enable = false;
       settings = {
         command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd niri";
         user = "emmanuel";
