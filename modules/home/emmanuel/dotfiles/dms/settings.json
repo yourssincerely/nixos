@@ -1,0 +1,8 @@
+{
+  "neovim": {
+    "enabled": false
+  },
+  "wallpaper" : {
+      "enabled" : true
+  }
+}

@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }: 
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
@@ -18,18 +18,15 @@
     ffmpeg
     ghostty
     neovim
-    fuzzel
     pipewire
     wireplumber
     alsa-utils
-    waybar
     wl-clipboard
     wlogout
     brightnessctl
     blueman
-    mako
-    nautilus
     tree
+    vlc
     oh-my-zsh
     nerd-fonts.jetbrains-mono
   ];
@@ -65,7 +62,6 @@
   programs = {
     niri = {
       enable = true;
-      useNautilus = true;
     };
   };
 
@@ -84,18 +80,25 @@
   };
 
   users = {
-    users.emmanuel = {
-      isNormalUser = true;
-      description = "emmanuel";
-      extraGroups = [
-        "networkmanager"
-        "wheel"
-      ];
-      shell = pkgs.zsh;
-      uid = 1001;
-      hashedPassword = "$y$j9T$Fe.g1bN6ETLEi8sW/I62B/$dec0aoWxJBnQ6dkrgIqMl8Q4XrVR2Uv999ehDU1f6v6";
+    users = {
+      emmanuel = {
+        isNormalUser = true;
+        description = "emmanuel";
+        extraGroups = [
+          "networkmanager"
+          "wheel"
+          "input"
+        ];
+        shell = pkgs.zsh;
+        uid = 1001;
+        hashedPassword = "$y$j9T$Fe.g1bN6ETLEi8sW/I62B/$dec0aoWxJBnQ6dkrgIqMl8Q4XrVR2Uv999ehDU1f6v6";
+      };
     };
-
     mutableUsers = false;
+  };
+
+  xdg.portal = {
+    enable = true;
+    wlr.enable = true;
   };
 }
