@@ -61,12 +61,6 @@
     networkmanager.enable = true;
   };
 
-  programs = {
-    niri = {
-      enable = true;
-    };
-  };
-
   services = {
     blueman.enable = true;
     displayManager.ly.enable = true;
