@@ -5,7 +5,10 @@
     
     niri = {
       enable = true;
-      useNautilus = true;
+    };
+
+    niri = {
+      enable = true;
     };
    
     zsh.enable = true;

@@ -16,6 +16,7 @@
   environment.systemPackages = with pkgs; [
     google-chrome
     ffmpeg
+    niri
     ghostty
     neovim
     pipewire

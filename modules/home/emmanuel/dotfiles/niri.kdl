@@ -67,7 +67,12 @@ layout {
 // #####################################################
 // ####################### Startup ##################### 
 // ##################################################### 
-spawn-at-startup "dms"
+spawn-at-startup {
+    command "dms run"
+}
+spawn-at-startup {
+    command "ghostty"
+}
 hotkey-overlay {
     skip-at-startup
 }
