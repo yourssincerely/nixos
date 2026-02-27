@@ -15,7 +15,7 @@
       };
       enableSystemMonitoring = true;
       enableVPN = true;
-      enableDynamiTheming = true;
+      enableDynamicTheming = true;
       enableCalendarEvents = true;
       enableClipboardPaste = true;
     };
