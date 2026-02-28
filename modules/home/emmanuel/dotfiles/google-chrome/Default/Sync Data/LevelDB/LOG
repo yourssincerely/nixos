@@ -1,8 +1,0 @@
-2026/02/28-22:28:34.261 993 Creating DB /home/emmanuel/.config/google-chrome/Default/Sync Data/LevelDB since it was missing.
-2026/02/28-22:28:34.306 993 Reusing MANIFEST /home/emmanuel/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
-2026/02/28-22:30:24.369 9a5 Level-0 table #5: started
-2026/02/28-22:30:24.375 9a5 Level-0 table #5: 146374 bytes OK
-2026/02/28-22:30:24.376 9a5 Delete type=0 #3
-2026/02/28-22:30:26.880 9a2 Level-0 table #7: started
-2026/02/28-22:30:26.884 9a2 Level-0 table #7: 98633 bytes OK
-2026/02/28-22:30:26.885 9a2 Delete type=0 #4
