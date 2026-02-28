@@ -27,5 +27,14 @@ input {
 
     trackpoint {
     }
+
+    mod-key "Super"
 }
 
+screenshot-path "~/Screenshots/%Y-%m-%d--%H-%M-%S.png"
+
+gestures {
+    hot-corners {
+        off
+    }
+}

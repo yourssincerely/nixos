@@ -18,6 +18,8 @@
     ffmpeg
     niri
     ghostty
+    cups-pk-helper
+    accountsservice
     neovim
     pipewire
     wireplumber
@@ -59,6 +61,13 @@
   networking = {
     hostName = "laptop";
     networkmanager.enable = true;
+  };
+
+      programs = {
+    niri = {
+      enable = true;
+    };
+    zsh.enable = true;
   };
 
   services = {
