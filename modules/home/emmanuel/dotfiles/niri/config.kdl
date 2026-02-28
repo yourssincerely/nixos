@@ -1,0 +1,31 @@
+// Include DMS keybind overrides
+include "dms/cursor.kdl"
+include "dms/binds.kdl"
+include "dms/alttab.kdl"
+include "dms/colors.kdl"
+include "dms/layout.kdl"
+include "dms/outputs.kdl"
+include "dms/windowrules.kdl"
+include "dms/wpblur.kdl"
+
+// Standard configuration
+input {
+    keyboard {
+        xkb {
+          layout "es, gb"
+	  options "grp:win_space_toggle";
+	}
+        numlock
+    }
+
+    touchpad {
+        tap
+        natural-scroll
+    }
+    mouse {
+    }
+
+    trackpoint {
+    }
+}
+
