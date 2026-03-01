@@ -81,6 +81,7 @@
   services = {
     blueman.enable = true;
     dbus.enable = true;
+    greetd.settings.default_session.user = "emmanuel";
     pipewire = {
       enable = true;
       alsa.enable = true;
