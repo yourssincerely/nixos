@@ -75,18 +75,7 @@
   services = {
     blueman.enable = true;
     dbus.enable = true;
-    displayManager.dms-greeter = {
-      enable = true;
-      compositor.name = "niri";
-    };
-    greetd = {
-      enable = true;
-      settings = {
-        default_session = {
-          user = "emmanuel";
-        };
-      };
-    };
+    displayManager.ly.enable = true;
     pipewire = {
       enable = true;
       alsa.enable = true;
@@ -94,7 +83,6 @@
       pulse.enable = true;
     };
     power-profiles-daemon.enable = true;
-    seatd.enable = true;
     upower.enable = true;
   };
 
