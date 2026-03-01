@@ -11,7 +11,7 @@ binds {
     Mod+C hotkey-overlay-title="Open Browser" {
         spawn "google-chrome";
     }
-    Mod+F hotkey-overlay-title="Open File Manager" {
+    Mod+Z hotkey-overlay-title="Open File Manager" {
         spawn "pcmanfm";
     }
 
