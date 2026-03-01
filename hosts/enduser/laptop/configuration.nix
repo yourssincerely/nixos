@@ -26,7 +26,6 @@
     pcmanfm
     pipewire
     wireplumber
-    dms-greeter
     alsa-utils
     wl-clipboard
     wlogout
