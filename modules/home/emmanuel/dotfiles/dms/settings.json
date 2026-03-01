@@ -115,7 +115,7 @@
       "width": 50
     }
   ],
-  "showWorkspaceIndex": ,
+  "showWorkspaceIndex": true,
   "showWorkspaceName": false,
   "showWorkspacePadding": false,
   "workspaceScrolling": false,
