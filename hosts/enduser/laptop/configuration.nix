@@ -5,6 +5,7 @@
     [
       ./hardware-configuration.nix
       ../../../modules/core
+      inputs.dms.nixosModules.greeter
     ];
 
   boot = {
@@ -21,9 +22,12 @@
     cups-pk-helper
     accountsservice
     neovim
+    direnv
+    devenv
+    pcmanfm
     pipewire
     wireplumber
-    fuzzel
+    greetd
     alsa-utils
     wl-clipboard
     wlogout
@@ -63,7 +67,11 @@
     networkmanager.enable = true;
   };
 
-      programs = {
+  programs = {
+    dank-material-shell.greeter = {
+      enable = true;
+      compositor.name = "niri";
+    };
     niri = {
       enable = true;
     };

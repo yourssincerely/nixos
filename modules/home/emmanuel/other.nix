@@ -5,7 +5,7 @@
   home.stateVersion = "25.11";
 
   programs = {
- 
+
     ghostty = {
       enable = true;
       enableZshIntegration = true;

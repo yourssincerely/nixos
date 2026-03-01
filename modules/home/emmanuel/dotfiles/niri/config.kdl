@@ -13,21 +13,18 @@ input {
     keyboard {
         xkb {
           layout "es, gb"
-	  options "grp:win_space_toggle";
-	}
-        numlock
+	      options "grp:win_space_toggle";
+	    }
+    numlock
     }
 
     touchpad {
         tap
         natural-scroll
+        disabled-on-external-mouse
     }
-    mouse {
-    }
-
-    trackpoint {
-    }
-
+    mouse {}
+    trackpoint {}
     mod-key "Super"
 }
 
@@ -37,4 +34,8 @@ gestures {
     hot-corners {
         off
     }
+}
+
+hotkey-overlay {
+    skip-at-startup
 }
