@@ -5,7 +5,6 @@
     [
       ./hardware-configuration.nix
       ../../../modules/core
-      inputs.dms.nixosModules.greeter
     ];
 
   boot = {
@@ -27,7 +26,7 @@
     pcmanfm
     pipewire
     wireplumber
-    greetd
+    dms-greeter
     alsa-utils
     wl-clipboard
     wlogout
@@ -68,10 +67,6 @@
   };
 
   programs = {
-    dank-material-shell.greeter = {
-      enable = true;
-      compositor.name = "niri";
-    };
     niri = {
       enable = true;
     };
@@ -81,7 +76,10 @@
   services = {
     blueman.enable = true;
     dbus.enable = true;
-    greetd.settings.default_session.user = "emmanuel";
+    displayManager.dms-greeter = {
+      enable = true;
+      compositor.name = "niri";
+    };
     pipewire = {
       enable = true;
       alsa.enable = true;
