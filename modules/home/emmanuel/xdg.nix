@@ -8,6 +8,7 @@
       "nvim".source = ./dotfiles/nvim;
       "DankMaterialShell".source = ./dotfiles/dms;
       "wallpapers".source = ./dotfiles/wallpapers;
+      "profpics".source = ./dotfiles/profpics;
     };
   };
 }
