@@ -79,6 +79,15 @@
       enable = true;
       compositor.name = "niri";
     };
+    greetd = {
+      enable = true;
+      settings = {
+        default_session = {
+          command = "${pkgs.niri}/bin/niri";
+          user = "emmanuel";
+        };
+      };
+    };
     pipewire = {
       enable = true;
       alsa.enable = true;
@@ -86,6 +95,7 @@
       pulse.enable = true;
     };
     power-profiles-daemon.enable = true;
+    seatd.enable = true;
     upower.enable = true;
   };
 
