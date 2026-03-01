@@ -80,7 +80,6 @@
 
   services = {
     blueman.enable = true;
-    displayManager.ly.enable = true;
     dbus.enable = true;
     pipewire = {
       enable = true;
