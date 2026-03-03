@@ -71,7 +71,7 @@ binds {
     Mod+Shift+2 hotkey-overlay-title="Move Window to Workspace 2" {
         move-window-to-workspace 2
     }
-    Mod+Shift+2 hotkey-overlay-title="Move Window to Workspace 3" {
+    Mod+Shift+3 hotkey-overlay-title="Move Window to Workspace 3" {
         move-window-to-workspace 3
     }
 }
