@@ -13,7 +13,7 @@ input {
     keyboard {
         xkb {
           layout "es, gb"
-	      options "grp:win_space_toggle";
+	      options "grp:win_shift_space_toggle";
 	    }
     numlock
     }
