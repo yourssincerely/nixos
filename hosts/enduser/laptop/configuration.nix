@@ -76,6 +76,10 @@
   services = {
     blueman.enable = true;
     dbus.enable = true;
+    displayManager.dms-greeter = {
+      enable = true;
+      compositor.name = "niri";
+    };
     #displayManager.ly.enable = true;
     greetd = {
       enable = true;
