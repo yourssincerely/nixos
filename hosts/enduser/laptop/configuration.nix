@@ -32,6 +32,7 @@
     brightnessctl
     blueman
     tree
+    tuigreet
     vlc
     oh-my-zsh
     nerd-fonts.jetbrains-mono
@@ -75,7 +76,11 @@
   services = {
     blueman.enable = true;
     dbus.enable = true;
-    displayManager.ly.enable = true;
+    #displayManager.ly.enable = true;
+    greetd = {
+      enable = true;
+      settings.default_session.command = "${pkgs.tuigreet}/bin/tuigreet --xsessions ${config.services.displayManager.sessionData.desktops}/share/xsessions --sessions ${config.services.displayManager.sessionData.desktops}/share/wayland-sessions --remember --remember-user-session --user-menu --user-menu-min-uid 1000 --asterisks --power-shutdown 'shutdown -P now' --power-reboot 'shutdown -r now'";
+    };
     pipewire = {
       enable = true;
       alsa.enable = true;
