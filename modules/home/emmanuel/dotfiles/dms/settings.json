@@ -58,7 +58,7 @@
   "showControlCenterButton": true,
   "showCapsLockIndicator": true,
   "controlCenterShowNetworkIcon": true,
-  "controlCenterShowBluetoothIcon": true,
+  "controlCenterShowBluetoothIcon": false,
   "controlCenterShowAudioIcon": true,
   "controlCenterShowAudioPercent": false,
   "controlCenterShowVpnIcon": true,
