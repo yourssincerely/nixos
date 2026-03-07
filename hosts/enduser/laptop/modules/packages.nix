@@ -4,7 +4,7 @@
   environment = {
       systemPackages = with pkgs; [
         google-chrome
-        adawaita-icon-theme
+        adwaita-icon-theme
         ffmpeg
         niri
         ghostty
