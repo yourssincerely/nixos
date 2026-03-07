@@ -61,3 +61,8 @@ output "DP-4" {
     scale 1.0
     position x=1080 y=0
 }
+
+cursor {
+    theme "Adwaita"
+    size 24
+}
