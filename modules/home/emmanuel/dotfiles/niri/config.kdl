@@ -39,3 +39,25 @@ gestures {
 hotkey-overlay {
     skip-at-startup
 }
+
+// laptop
+output "eDP-1" {
+    mode "2520x1680@90.000"
+    scale 1.5
+    position x=3640 y=0
+}
+
+// Acer
+output "DP-5" {
+    mode "1920x1080@60.000"
+    transform "90"
+    scale 1.0
+    position x=0 y=0
+}
+
+// Dell
+output "DP-4" {
+    mode "2560x1440@59.951"
+    scale 1.0
+    position x=1080 y=0
+}
